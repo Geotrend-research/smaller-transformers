@@ -86,7 +86,7 @@ def main():
                         type=str,
                         required=False,
                         default=False, 
-                        help="Wether to generate a tenserflow version or not")
+                        help="Whether to generate a tenserflow version or not")
 
     args = parser.parse_args()
     
