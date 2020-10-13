@@ -41,7 +41,7 @@ pip install requirements.txt
 
 python3 reduce_model.py \
 	--source_model bert-base-multilingual-cased \
-	--vocab_file vocab_5langs.txt \ 
+	--vocab_file vocab_5langs.txt \
 	--output_model bert-base-5lang-cased \
 	--convert_to_tf False
 ```
