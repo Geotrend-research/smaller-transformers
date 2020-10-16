@@ -2,7 +2,7 @@
 
 This repository shares smaller versions of multilingual transformers that keep the same representations offered by the original ones. The idea came from a simple observation: *after massively multilingual pretraining, not all embeddings are needed to perform finetuning and inference*. In practice one would rarely require a model that supports more than 100 languages as the original [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md). Therefore, we extracted several smaller versions that handle fewer languages. Since most of the parameters of multilingual transformers are located in the embeddings layer, our models are between 21% and 45% smaller in size.
 
-The table bellow compares two of our exracted versions with the original mBERT. It show the models size, memory footprint and the obtained accuracy on the [XNLI dataset](https://github.com/facebookresearch/XNLI) (Cross-lingual Transfer from english for french). These measurements have been computed on a [Google Cloud n1-standard-1 machine (1 vCPU, 3.75 GB)](https://cloud.google.com/compute/docs/machine-types\#n1_machine_type).
+The table bellow compares two of our exracted versions with the original mBERT. It shows the models size, memory footprint and the obtained accuracy on the [XNLI dataset](https://github.com/facebookresearch/XNLI) (Cross-lingual Transfer from english for french). These measurements have been computed on a [Google Cloud n1-standard-1 machine (1 vCPU, 3.75 GB)](https://cloud.google.com/compute/docs/machine-types\#n1_machine_type).
 
 |            Model                | Num parameters |   Size   |  Memory  | Accuracy |
 | ----------------------------    | -------------- | -------- | -------- | -------- |
