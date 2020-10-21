@@ -8,7 +8,7 @@ The table bellow compares two of our exracted versions with the original mBERT. 
 | ----------------------------    | -------------- | -------- | -------- | -------- |
 | bert-base-multilingual-cased    |   178 million  |  714 MB  | 1400 MB  |   73.8   |
 | Geotrend/bert-base-15lang-cased |   141 million  |  564 MB  | 1098 MB  |   74.1   |
-| Geotrend/bert-base-en-fr-cased  |   124 million  |  447 MB  |  878 MB  |   73.8   |
+| Geotrend/bert-base-en-fr-cased  |   112 million  |  447 MB  |  878 MB  |   73.8   |
 
 Reducing the size of multilingual transformers facilitates their deployment on public cloud platforms. 
 For instance, Google Cloud Platform requires that the model size on disk should be lower than 500 MB for serveless deployments (Cloud Functions / Cloud ML).
