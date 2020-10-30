@@ -65,6 +65,17 @@ def select_embeddings(model, old_vocab, new_vocab, model_name='new_model'):
     return new_embeddings
 
 
+def str2bool(v):
+    if isinstance(v, bool):
+       return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
+        
 def main():
     parser = argparse.ArgumentParser(description="reducing transformers size")
     parser.add_argument("--source_model",    
@@ -83,9 +94,9 @@ def main():
                         default='output_model',
                         help="The name of the final reduced model")
     parser.add_argument("--convert_to_tf",
-                        type=str,
+                        type=str2bool,
                         required=False,
-                        default=False, 
+                        default=False,
                         help="Whether to generate a tenserflow version or not")
 
     args = parser.parse_args()
