@@ -118,7 +118,7 @@ def main():
 
     # convert to tensorflow
     if (args.convert_to_tf):
-        if os.path.isfile(f"{args.output_model}/pytorch_model.bin"):
+        if os.path.isfile(f"{args.output_model}/tf_model.h5"):
             print(f"{args.output_model}/tf_model.h5 already exists")
         else:
             tf_model = TFAutoModel.from_pretrained(args.output_model, from_pt=True)
