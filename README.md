@@ -37,7 +37,7 @@ We also share a python script that allows users to generate smaller transformers
 
 ```bash
 
-pip install requirements.txt
+pip install -r requirements.txt
 
 python3 reduce_model.py \
 	--source_model bert-base-multilingual-cased \
