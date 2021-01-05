@@ -56,7 +56,7 @@ Where:
 
 ```bibtex
 @inproceedings{smallermbert,
-  title={Load What You Need: Smaller Versions of Mutlilingual BERT},
+  title={Load What You Need: Smaller Versions of Multilingual BERT},
   author={Abdaoui, Amine and Pradel, Camille and Sigel, Grégoire},
   booktitle={SustaiNLP / EMNLP},
   year={2020}
