@@ -17,7 +17,7 @@ For more information, please refer to our paper: [Load What You Need](https://ar
 
 ## Available Models
 
-Until now, we generated 30 smaller models from the original mBERT cased version. These models have been uploaded to the [Hugging Face Model Hub](https://huggingface.co/models) in order to facilitate their use: https://huggingface.co/Geotrend.
+Until now, we generated 69 smaller models from the original mBERT cased version. These models have been uploaded to the [Hugging Face Model Hub](https://huggingface.co/models) in order to facilitate their use: https://huggingface.co/Geotrend.
 
 They can be downloaded easily using the [transformers library](https://github.com/huggingface/transformers):
 
