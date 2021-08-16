@@ -1,6 +1,6 @@
 # Smaller Multilingual Transformers
 
-This repository shares smaller versions of multilingual transformers that keep the same representations offered by the original ones. The idea came from a simple observation: *after massively multilingual pretraining, not all embeddings are needed to perform finetuning and inference*. In practice one would rarely require a model that supports more than 100 languages as the original [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md). Therefore, we extracted several smaller versions that handle fewer languages. Since most of the parameters of multilingual transformers are located in the embeddings layer, our models are between 21% and 45% smaller in size.
+This repository shares smaller versions of multilingual transformers that keep the same representations offered by the original ones. The idea came from a simple observation: *after massively multilingual pretraining, not all embeddings are needed to perform finetuning and inference*. In practice one would rarely require a model that supports more than 100 languages as the original [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md). Therefore, we extracted several smaller versions that handle fewer languages. Since most of the parameters of multilingual transformers are located in the embeddings layer, our models are up to 64% smaller in size.
 
 The table bellow compares two of our exracted versions with the original mBERT. It shows the models size, memory footprint and the obtained accuracy on the [XNLI dataset](https://github.com/facebookresearch/XNLI) (Cross-lingual Transfer from english for french). These measurements have been computed on a [Google Cloud n1-standard-1 machine (1 vCPU, 3.75 GB)](https://cloud.google.com/compute/docs/machine-types\#n1_machine_type).
 
@@ -15,9 +15,18 @@ For instance, Google Cloud Platform requires that the model size on disk should 
 
 For more information, please refer to our paper: [Load What You Need](https://arxiv.org/abs/2010.05609).
 
+**\*\*\* New August 2021: smaller versions of distil-mBERT are now available \! \*\*\***
+
+|                  Model                | Num parameters |   Size   |  Memory  |
+| ------------------------------------- | -------------- | -------- | -------- |
+| distilbert-base-multilingual-cased    |   178 million  |  542 MB  | 1200 MB  |
+| Geotrend/distilbert-base-en-fr-cased  |    69 million  |  277 MB  |  740 MB  |
+
+🚀 To our knowledge, these distil-mBERT based versions are the smallest and fastest multilingual transformers that we are aware of.
+
 ## Available Models
 
-Until now, we generated 70 smaller models from the original mBERT cased version. These models have been uploaded to the [Hugging Face Model Hub](https://huggingface.co/models) in order to facilitate their use: https://huggingface.co/Geotrend.
+Until now, we generated  a total of 138 models (70 extracted from mBERT and 68 extracted from distil-mBERT). These models have been uploaded to the [Hugging Face Model Hub](https://huggingface.co/models) in order to facilitate their use: https://huggingface.co/Geotrend.
 
 They can be downloaded easily using the [transformers library](https://github.com/huggingface/transformers):
 
