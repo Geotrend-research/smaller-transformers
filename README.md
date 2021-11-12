@@ -74,4 +74,4 @@ Where:
 
 ## Contact 
 
-Please contact amin.geotrend@geotrend.fr for any question, feedback or request.
+Please contact amin.geotrend@gmail.com for any question, feedback or request.
