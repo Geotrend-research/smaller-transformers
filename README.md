@@ -6,9 +6,9 @@ The table bellow compares two of our exracted versions with the original mBERT. 
 
 |            Model                | Num parameters |   Size   |  Memory  | Accuracy |
 | ----------------------------    | -------------- | -------- | -------- | -------- |
-| bert-base-multilingual-cased    |   178 million  |  714 MB  | 1400 MB  |   73.8   |
-| Geotrend/bert-base-15lang-cased |   141 million  |  564 MB  | 1098 MB  |   74.1   |
-| Geotrend/bert-base-en-fr-cased  |   112 million  |  447 MB  |  878 MB  |   73.8   |
+| [bert-base-multilingual-cased](https://huggingface.co/bert-base-multilingual-cased)    |   178 million  |  714 MB  | 1400 MB  |   73.8   |
+| [Geotrend/bert-base-15lang-cased](https://huggingface.co/Geotrend/bert-base-15lang-cased) |   141 million  |  564 MB  | 1098 MB  |   74.1   |
+| [Geotrend/bert-base-en-fr-cased](https://huggingface.co/Geotrend/bert-base-en-fr-cased)  |   112 million  |  447 MB  |  878 MB  |   73.8   |
 
 Reducing the size of multilingual transformers facilitates their deployment on public cloud platforms. 
 For instance, Google Cloud Platform requires that the model size on disk should be lower than 500 MB for serveless deployments (Cloud Functions / Cloud ML).
@@ -19,8 +19,8 @@ For more information, please refer to our paper: [Load What You Need](https://ar
 
 |                  Model                | Num parameters |   Size   |  Memory  |
 | ------------------------------------- | -------------- | -------- | -------- |
-| distilbert-base-multilingual-cased    |   178 million  |  542 MB  | 1200 MB  |
-| Geotrend/distilbert-base-en-fr-cased  |    69 million  |  277 MB  |  740 MB  |
+| [distilbert-base-multilingual-cased](https://huggingface.co/distilbert-base-multilingual-cased)    |   178 million  |  542 MB  | 1200 MB  |
+| [Geotrend/distilbert-base-en-fr-cased](https://huggingface.co/Geotrend/distilbert-base-en-fr-cased)  |    69 million  |  277 MB  |  740 MB  |
 
 🚀 To our knowledge, these distil-mBERT based versions are the smallest and fastest multilingual transformers that we are aware of.
 
